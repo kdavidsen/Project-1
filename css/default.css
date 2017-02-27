@@ -1,10 +1,28 @@
 /* All CSS styles go here */
+body {
+overflow: hidden;
+background-color: #00001a;
+}
+.bg {
+	background-image: url('../images/Nebula.png');
+	background-repeat:no-repeat;
+	height: 100%;
+	width: 100%;
+	transform-origin: 50% 50% 0;
+	position: absolute;
+	z-index: -5;
+	animation-name: Rotate;
+	animation-duration: 90s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
 .container {
+  	position: absolute;
+  	top: 50%;
+  	transform: translateY(-50%);
 	width: 1600px;
 	height: 750px;
-	background-color: #00001a;
 	position: absolute;
-	overflow: hidden;
 	z-index: -5;
 }
 .title {
@@ -145,6 +163,14 @@
 		animation: Radar6 6s;
 		animation-fill-mode: forwards;
 }
+.seven {
+		top: -1221px;
+		left: -1596px;
+		width: 3192px;
+		height: 3192px;
+		animation: Radar7 7s;
+		animation-fill-mode: forwards;
+}
 /* Star Parameters*/
 .star{
 	height: 12px;
@@ -190,13 +216,6 @@
 	top: 305px;
 	left: 105px;
 }
-.ldline1 {
-	width: 56px;
-	top: 380px;
-	left: 5px;
-	transform: rotate(-27deg);
-	opacity: 0;
-}
 
 /* Cross */
 .org {
@@ -213,20 +232,20 @@
 	animation-fill-mode: forwards;
 }
 .cr1 {
-	top: 370px;
-	left: 300px;
-}
-.cr2 {
-	top: 550px;
-	left: 330px;
-}
-.cr3 {
-	top: 430px;
+	top: 470px;
 	left: 250px;
 }
+.cr2 {
+	top: 650px;
+	left: 280px;
+}
+.cr3 {
+	top: 530px;
+	left: 200px;
+}
 .cr4 {
-	top: 410px;
-	left: 370px;
+	top: 510px;
+	left: 320px;
 }
 
 /* Traingle */
@@ -278,28 +297,28 @@
 /* Libra */
 
 .ly1 {
-	top: 445px;
-	left: 550px;
+	top: 145px;
+	left: 1010px;
 }
 .ly2 {
-	top: 470px;
-	left: 500px;
+	top: 170px;
+	left: 960px;
 }
 .ly3 {
-	top: 470px;
-	left: 580px;
+	top: 170px;
+	left: 1040px;
 }
 .ly4 {
-	top: 570px;
-	left: 490px;
+	top: 270px;
+	left: 950px;
 }
 .ly5 {
-	top: 590px;
-	left: 490px;
+	top: 290px;
+	left: 950px;
 }
 .ly6 {
-	top: 570px;
-	left: 580px;
+	top: 270px;
+	left: 1040px;
 }
 /* Green Stars */
 .grn {
@@ -566,7 +585,21 @@
 	83.33% {transform: scale(.8333, .8333);}
 	100% {transform: scale(1, 1);}
 } 
+@keyframes Radar7 {
+	0% {transform: scale(0, 0);}
+	14.28% {transform: scale(.1428, .1428);}
+	28.57% {transform: scale(.2857, .2857);}
+	42.86% {transform: scale(.4286, .4286);}
+	57.14% {transform: scale(.5714, .5714);}
+	71.43% {transform: scale(.7143, .7143);}
+	85.71% {transform: scale(.8571, .8571);}
+	100% {transform: scale(1, 1);}
+} 
 @keyframes Fade {
 	0% {opacity: 0;}
 	100% {opacity: 1;}
+}
+@keyframes Rotate {
+	0% {transform: scale(1.5, 1.5);}
+	100%{transform: scale(1.2, 1.2);}
 }
