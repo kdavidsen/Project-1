@@ -1,0 +1,572 @@
+/* All CSS styles go here */
+.container {
+	width: 1600px;
+	height: 750px;
+	background-color: #00001a;
+	position: absolute;
+	overflow: hidden;
+	z-index: -5;
+}
+.title {
+	font-family: Roboto;
+	position: absolute;
+	top: 190px;
+	left: 195px;
+	color: white;
+	font-size: 5em;
+	z-index: 5;
+
+	
+}
+.fade1 {
+	animation: Fade 1s 1s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+.fade2 {
+	animation: Fade 1s 2s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+.fade3 {
+	animation: Fade 1s 3s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+.fade4 {
+	animation: Fade 1s 4s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+.fade5 {
+	animation: Fade 1s 5s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+.info {
+	font-family: Roboto;
+	position: absolute;
+	top: 330px;
+	left: 505px;
+	color: white;
+	line-height: 1.4em;
+	font-size: 2em;
+	z-index: 5;
+}
+.description{
+	font-family: Roboto;
+	position: absolute;
+	top: 500px;
+	left: 1100px;
+	color: white;
+	line-height: 1.2em;
+	font-size: 1.3em;
+	z-index: 5;
+}
+/* Lines */
+.line {
+	width: 100%;
+	height: 2px;
+	left: 0;
+	top: 50%;
+	position: absolute;
+	background:linear-gradient(to right, rgba(153, 153, 255, 0), rgba(153, 153, 255, .25),rgba(153, 153, 255, 1),rgba(153, 153, 255, 1));
+}
+.topline {
+	transform: rotate(-60deg);
+	transform-origin: 0% 50% 0;
+}
+.midtopline {
+	transform: rotate(-30deg);
+	transform-origin: 0% 50% 0;
+}
+.midbotline {
+	transform: rotate(30deg);
+	transform-origin: 0% 50% 0;
+}
+.botline {
+	transform: rotate(60deg);
+	transform-origin: 0% 50% 0;
+}
+/* Circles */
+.circle{
+	border: purple 1px solid;
+	border-color: purple;
+	border-radius: 100%;
+	position: absolute;
+	transform-origin: 50% 50% 0;
+	opacity: .5;
+}
+.one {
+		top: 147px;
+		left: -228px;
+		width: 456px;
+		height: 456px;
+		animation: Radar1 1s;
+		animation-fill-mode: forwards;
+}
+.two{
+		top: -81px;
+		left: -456px;
+		width: 912px;
+		height: 912px;
+		animation: Radar2 2s;
+		animation-fill-mode: forwards;
+}
+.three{
+		top: -309px;
+		left: -684px;
+		width: 1368px;
+		height: 1368px;
+		animation: Radar3 3s;
+		animation-fill-mode: forwards;
+}
+.four{
+		top: -537px;
+		left: -912px;
+		width: 1824px;
+		height: 1824px;
+		animation: Radar4 4s;
+		animation-fill-mode: forwards;
+}
+.five{
+		top: -765px;
+		left: -1140px;
+		width: 2280px;
+		height: 2280px;
+		animation: Radar5 5s;
+		animation-fill-mode: forwards;
+}
+.six{
+		top: -993px;
+		left: -1368px;
+		width: 2736px;
+		height: 2736px;
+		animation: Radar6 6s;
+		animation-fill-mode: forwards;
+}
+/* Star Parameters*/
+.star{
+	height: 12px;
+	width: 12px;
+	border-radius: 100%;
+	position: absolute;
+}
+/* Little Dipper */
+.red {
+	background-color: red;
+	transform-origin: 0 50% 0;
+	height: 2px;
+	position: absolute;
+	z-index: -1;
+}
+.redst {
+	background: radial-gradient(red 5%, #00001a 80%);
+	animation: Fade 1s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+.ld1 {
+	top: 375px;
+	left: 0;
+}
+.ld2 {
+	top: 350px;
+	left: 50px;
+}
+.ld3 {
+	top: 310px;
+	left: 70px;
+}
+.ld4 {
+	top: 260px;
+	left: 75px;
+}
+.ld5 {
+	top: 270px;
+	left: 110px;
+}
+.ld6 {
+	top: 305px;
+	left: 105px;
+}
+.ldline1 {
+	width: 56px;
+	top: 380px;
+	left: 5px;
+	transform: rotate(-27deg);
+	opacity: 0;
+}
+
+/* Cross */
+.org {
+	background-color: orange;
+	transform-origin: 0 50% 0;
+	height: 2px;
+	position: absolute;
+	z-index: -1;
+}
+.orangest {
+	background: radial-gradient(orange 5%, #00001a 80%);
+	animation: Fade 1s 1s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+.cr1 {
+	top: 370px;
+	left: 300px;
+}
+.cr2 {
+	top: 550px;
+	left: 330px;
+}
+.cr3 {
+	top: 430px;
+	left: 250px;
+}
+.cr4 {
+	top: 410px;
+	left: 370px;
+}
+
+/* Traingle */
+
+.tr1 {
+	top: 50px;
+	left: 240px;
+}
+.tr2 {
+	top: 90px;
+	left: 190px;
+}
+.tr3 {
+	top: 90px;
+	left: 270px;
+}
+
+/* Ares */
+.ylw {
+	background-color: yellow;
+	transform-origin: 0 50% 0;
+	height: 2px;
+	position: absolute;
+	z-index: -1;
+}
+.yellowst {
+	background: radial-gradient(yellow 5%, #00001a 80%);
+	animation: Fade 1s 2s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+.ar1 {
+	top: 100px;
+	left: 430px;
+}
+.ar2 {
+	top: 110px;
+	left: 550px;
+}
+.ar3 {
+	top: 130px;
+	left: 580px;
+}
+.ar4 {
+	top: 140px;
+	left: 590px;
+}
+
+/* Libra */
+
+.ly1 {
+	top: 445px;
+	left: 550px;
+}
+.ly2 {
+	top: 470px;
+	left: 500px;
+}
+.ly3 {
+	top: 470px;
+	left: 580px;
+}
+.ly4 {
+	top: 570px;
+	left: 490px;
+}
+.ly5 {
+	top: 590px;
+	left: 490px;
+}
+.ly6 {
+	top: 570px;
+	left: 580px;
+}
+/* Green Stars */
+.grn {
+	background-color: limegreen;
+	transform-origin: 0 50% 0;
+	height: 2px;
+	position: absolute;
+	z-index: -1;
+}
+.greenst {
+	background: radial-gradient(limegreen 5%, #00001a 80%);
+	animation: Fade 1s 3s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+.cas1{
+	top: 60px;
+	left: 660px;
+}
+.cas2{
+	top: 90px;
+	left: 700px;
+}
+.cas3{
+	top: 100px;
+	left: 750px;
+}
+.cas4{
+	top: 90px;
+	left: 800px;
+}
+.cas5{
+	top: 150px;
+	left: 760px;
+}
+.cas6{
+	top: 140px;
+	left: 820px;
+}
+ .ta1 {
+ 	top: 500px;
+ 	left: 740px;
+ }
+ .ta2 {
+ 	top: 570px;
+ 	left: 720px;
+ }
+ .ta3 {
+ 	top: 570px;
+ 	left: 840px;
+ }
+ .ta4 {
+ 	top: 600px;
+ 	left: 830px;
+ }
+ .ta5 {
+ 	top: 610px;
+ 	left: 845px;
+ }
+ .ta6 {
+ 	top: 590px;
+ 	left: 853px;
+ }
+ .ta7 {
+ 	top: 610px;
+ 	left: 865px;
+ }
+/* Blue Stars */
+.blu {
+	background-color: blue;
+	transform-origin: 0 50% 0;
+	height: 2px;
+	position: absolute;
+	z-index: -1;
+}
+.bluest {
+	background: radial-gradient(blue 5%, #00001a 80%);
+	animation: Fade 1s 4s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+ .ta8 {
+ 	top: 640px;
+ 	left: 900px;
+ }
+ .ta9 {
+ 	top: 660px;
+ 	left: 960px;
+ }
+.ta10 {
+ 	top: 665px;
+ 	left: 965px;
+ }
+ .ta11 {
+ 	top: 550px;
+ 	left: 930px;
+ }
+.vi1 {
+	top: 100px;
+	left: 920px;
+}
+.vi2 {
+	top: 160px;
+	left: 920px;
+}
+.vi3 {
+	top: 100px;
+	left: 1000px;
+}
+.vi4 {
+	top: 180px;
+	left: 1000px;
+}
+.vi5 {
+	top: 120px;
+	left: 1070px;
+}
+/* Indigo Stars */
+.indig {
+	background-color: indigo;
+	transform-origin: 0 50% 0;
+	height: 2px;
+	position: absolute;
+	z-index: -1;
+}
+.indigst {
+	background: radial-gradient(indigo 5%, #00001a 80%);
+	animation: Fade 1s 5s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+.vi6 {
+	top: 110px;
+	left: 1150px;
+}
+.vi7 {
+	top: 190px;
+	left: 1140px;
+}
+.vi8 {
+	top: 250px;
+	left: 1140px;
+}
+.vi9 {
+	top: 50px;
+	left: 1155px;
+}
+.vi10 {
+	top: 170px;
+	left: 1190px;
+}
+.vi11 {
+	top: 170px;
+	left: 1240px;
+}
+.vi12 {
+	top: 150px;
+	left: 1300px;
+}
+.vi13 {
+	top: 100px;
+	left: 1320px;
+}
+/* Violet Stars */
+.violet {
+	background-color: violet;
+	transform-origin: 0 50% 0;
+	height: 2px;
+	position: absolute;
+	z-index: -1;
+}
+.violetst {
+	background: radial-gradient(violet 5%, #00001a 80%);
+	animation: Fade 1s 6s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+.ca1 {
+	top: 90px;
+	left: 1430px;
+}
+.ca2 {
+	top: 180px;
+	left: 1450px;
+}
+.ca3 {
+	top: 210px;
+	left: 1440px;
+}
+.ca4 {
+	top: 260px;
+	left: 1410px;
+}
+.ca5 {
+	top: 290px;
+	left: 1500px;
+}
+.ca6 {
+	top: 260px;
+	left: 1520px; 
+}
+
+.lyra1 {
+	top: 600px;
+	left: 1450px;
+}
+.lyra2 {
+	top: 650px;
+	left: 1440px;
+}
+.lyra3 {
+	top: 640px;
+	left: 1460px;
+}
+.lyra4 {
+	top: 590px;
+	left: 1470px;
+}
+.lyra5 {
+	top: 570px;
+	left: 1490px;
+}
+
+/* Animations */
+
+@keyframes Radar1 {
+	0% {transform: scale(0, 0);}
+	100% {transform: scale(1, 1);}
+}
+@keyframes Radar2 {
+	0% {transform: scale(0, 0);}
+	50% {transform: scale(.5, .5);}
+	100% {transform: scale(1, 1);}
+}
+@keyframes Radar3 {
+	0% {transform: scale(0, 0);}
+	33% {transform: scale(.33, .33);}
+	67% {transform: scale(.67, .67);}
+	100% {transform: scale(1, 1);}
+}
+@keyframes Radar4 {
+	0% {transform: scale(0, 0);}
+	25% {transform: scale(.25, .25);}
+	50% {transform: scale(.5, .5);}
+	75% {transform: scale(.75, .75);}
+	100% {transform: scale(1, 1);}
+}
+@keyframes Radar5 {
+	0% {transform: scale(0, 0);}
+	20% {transform: scale(.2, .2);}
+	40% {transform: scale(.4, .4);}
+	60% {transform: scale(.6, .6);}
+	80% {transform: scale(.8, .8);}
+	100% {transform: scale(1, 1);}
+}
+@keyframes Radar6 {
+	0% {transform: scale(0, 0);}
+	16.67% {transform: scale(.1667, .1667);}
+	33% {transform: scale(.33, .33);}
+	50% {transform: scale(.5, .5);}
+	67% {transform: scale(.67, .67);}
+	83.33% {transform: scale(.8333, .8333);}
+	100% {transform: scale(1, 1);}
+} 
+@keyframes Fade {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
