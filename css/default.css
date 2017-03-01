@@ -11,16 +11,17 @@ background-color: #00001a;
 	transform-origin: 50% 50% 0;
 	position: absolute;
 	z-index: -5;
-	animation-name: Rotate;
+	animation-name: Scale;
 	animation-duration: 90s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
+	opacity: .5;
 }
 .container {
-  	position: absolute;
+  	position: relative;
   	top: 50%;
   	transform: translateY(-50%);
-	width: 1600px;
+	width: 100%;
 	height: 750px;
 	position: absolute;
 	z-index: -5;
@@ -33,7 +34,7 @@ background-color: #00001a;
 	color: white;
 	font-size: 5em;
 	z-index: 5;
-
+	letter-spacing: 4px;
 	
 }
 .fade1 {
@@ -179,13 +180,7 @@ background-color: #00001a;
 	position: absolute;
 }
 /* Little Dipper */
-.red {
-	background-color: red;
-	transform-origin: 0 50% 0;
-	height: 2px;
-	position: absolute;
-	z-index: -1;
-}
+
 .redst {
 	background: radial-gradient(red 5%, #00001a 80%);
 	animation: Fade 1s;
@@ -218,13 +213,7 @@ background-color: #00001a;
 }
 
 /* Cross */
-.org {
-	background-color: orange;
-	transform-origin: 0 50% 0;
-	height: 2px;
-	position: absolute;
-	z-index: -1;
-}
+
 .orangest {
 	background: radial-gradient(orange 5%, #00001a 80%);
 	animation: Fade 1s 1s;
@@ -264,13 +253,7 @@ background-color: #00001a;
 }
 
 /* Ares */
-.ylw {
-	background-color: yellow;
-	transform-origin: 0 50% 0;
-	height: 2px;
-	position: absolute;
-	z-index: -1;
-}
+
 .yellowst {
 	background: radial-gradient(yellow 5%, #00001a 80%);
 	animation: Fade 1s 2s;
@@ -298,38 +281,32 @@ background-color: #00001a;
 
 .ly1 {
 	top: 145px;
-	left: 1010px;
+	left: 1125px;
 }
 .ly2 {
 	top: 170px;
-	left: 960px;
+	left: 1085px;
 }
 .ly3 {
 	top: 170px;
-	left: 1040px;
+	left: 1155px;
 }
 .ly4 {
 	top: 270px;
-	left: 950px;
+	left: 1075px;
 }
 .ly5 {
 	top: 290px;
-	left: 950px;
+	left: 1075px;
 }
 .ly6 {
 	top: 270px;
-	left: 1040px;
+	left: 1155px;
 }
 /* Green Stars */
-.grn {
-	background-color: limegreen;
-	transform-origin: 0 50% 0;
-	height: 2px;
-	position: absolute;
-	z-index: -1;
-}
+
 .greenst {
-	background: radial-gradient(limegreen 5%, #00001a 80%);
+	background: radial-gradient(#00cc00 5%, #00001a 80%);
 	animation: Fade 1s 3s;
 	opacity: 0;
 	animation-fill-mode: forwards;
@@ -388,15 +365,9 @@ background-color: #00001a;
  	left: 865px;
  }
 /* Blue Stars */
-.blu {
-	background-color: blue;
-	transform-origin: 0 50% 0;
-	height: 2px;
-	position: absolute;
-	z-index: -1;
-}
+
 .bluest {
-	background: radial-gradient(blue 5%, #00001a 80%);
+	background: radial-gradient(#1a75ff 5%, #00001a 80%);
 	animation: Fade 1s 4s;
 	opacity: 0;
 	animation-fill-mode: forwards;
@@ -439,15 +410,9 @@ background-color: #00001a;
 	left: 1070px;
 }
 /* Indigo Stars */
-.indig {
-	background-color: indigo;
-	transform-origin: 0 50% 0;
-	height: 2px;
-	position: absolute;
-	z-index: -1;
-}
+
 .indigst {
-	background: radial-gradient(indigo 5%, #00001a 80%);
+	background: radial-gradient(#5c00e6 5%, #00001a 80%);
 	animation: Fade 1s 5s;
 	opacity: 0;
 	animation-fill-mode: forwards;
@@ -485,15 +450,9 @@ background-color: #00001a;
 	left: 1320px;
 }
 /* Violet Stars */
-.violet {
-	background-color: violet;
-	transform-origin: 0 50% 0;
-	height: 2px;
-	position: absolute;
-	z-index: -1;
-}
+
 .violetst {
-	background: radial-gradient(violet 5%, #00001a 80%);
+	background: radial-gradient(#a31aff 5%, #00001a 80%);
 	animation: Fade 1s 6s;
 	opacity: 0;
 	animation-fill-mode: forwards;
@@ -599,7 +558,7 @@ background-color: #00001a;
 	0% {opacity: 0;}
 	100% {opacity: 1;}
 }
-@keyframes Rotate {
-	0% {transform: scale(1.5, 1.5);}
-	100%{transform: scale(1.2, 1.2);}
+@keyframes Scale {
+	0% {transform: scale(2, 2);}
+	100%{transform: scale(3, 3);}
 }
